@@ -1,16 +1,30 @@
+/* Main Lay out */
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  max-width: 100vw;
+  /* background-image: url("background.jpg"); */
+}
+
 .price-title {
   padding-bottom: 3%;
 }
 
-body {
-  background-image: url("background.jpg");
-}
+
+
+/* color */
 
 p {
-  color: rgb(233, 229, 229);
+  color: black;
+  font-weight: 400;
 }
 
-.title {
+.block {
+  color: black;
+}
+
+/* .title {
   color: white;
 }
 
@@ -19,7 +33,15 @@ p {
 }
 
 .navbar {
-  color: white !important;
+  color: white ;
   background-color: transparent ;
-  
+} */
+
+/* Image lay out */
+
+.imageCours {
+  border:2px solid rgba(0, 0, 0, 0);
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+border-radius:7px;
 }
