@@ -1,3 +1,25 @@
 .price-title {
   padding-bottom: 3%;
 }
+
+body {
+  background-image: url("background.jpg");
+}
+
+p {
+  color: rgb(233, 229, 229);
+}
+
+.title {
+  color: white;
+}
+
+.block {
+  color: white;
+}
+
+.navbar {
+  color: white !important;
+  background-color: transparent ;
+  
+}
