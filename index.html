@@ -237,7 +237,7 @@
 						Vous avez une question, une suggestion
 						ou souhaitez simplement prendre
 						contact ? N'hésitez pas à m'envoyer un
-						petit mot :).
+						petit mot 🙃.
 					</p>
 				</div>
 				<form
@@ -246,12 +246,14 @@
 					enctype="text/plain"
 					class="ContactForm"
 				>
-					<label for="fname">Prénom</label>
+					<label for="fname">Email</label>
 					<input
 						type="text"
 						id="fname"
 						name="firstname"
-						placeholder="Votre nom.."
+						placeholder="Votre addresse mail..."
+						type="email"
+						pattern=".+@globex\.com"
 						required
 					/>
 					<label for="subject">Message</label>
