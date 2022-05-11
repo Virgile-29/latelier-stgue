@@ -7,7 +7,7 @@ let { windowHeight, windowWidth } =
 	setWindowDimensions();
 
 let navLinks = Array.from(
-	document.querySelectorAll('.nav-item')
+	document.querySelectorAll('.navbar-item')
 );
 
 let mustPaintNavBs = [false, false, false, false];

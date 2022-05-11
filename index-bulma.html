@@ -129,11 +129,13 @@
 				</nav>
 			</div>
 			<div class="mlp-title">
-				L ' Atelier <br />
-				&nbsp;de Saint-Gué
+				<h1 class="has-text-weight-bold">
+					L ' Atelier <br />
+					&nbsp;de Saint-Gué
+				</h1>
 			</div>
 			<canvas
-				class="Board-Canvas"
+				class="Board-Canvas absolute-origin in-background"
 				id="canvas1"
 			></canvas>
 		</section>
@@ -143,6 +145,7 @@
 				<div class="column is-one-third">
 					<figure class="image is-4-by-5 p-5">
 						<img
+							alt="Marie-Laure Moulart Barcelo"
 							src="mlmb.jpg"
 							class="shadow-frame side-image m-auto"
 						/>
@@ -226,7 +229,13 @@
 				<div class="column is-one-third">
 					<figure class="image is-4-by-5 p-5">
 						<img
-							src="mlmb.jpg"
+							alt="Tableau"
+							src="brushStrokes.png"
+							style="
+								object-fit: cover;
+								height: 500px;
+								max-width: 80vw;
+							"
 							class="shadow-frame side-image m-auto"
 						/>
 					</figure>
@@ -234,65 +243,95 @@
 			</div>
 		</section>
 		<!-- Third section -->
-		<section class="mlp-section" id="section4">
-			<div class="container">
-				<form
-					action="mailto:dorian.moulart@gmail.com?subject=ContactArtTherapie:"
-					method="get"
-					enctype="text/plain"
-				>
-					<div class="field">
-						<label class="label" for="email"
-							>Email</label
-						>
-						<div
-							class="control has-icons-left has-icons-right"
-						>
-							<input
-								id="email"
-								class="input is-medium"
-								type="email"
-								placeholder="Votre adresse email"
-								required
-							/>
-							<span
-								class="icon is-medium is-left"
+		<section
+			class="mlp-section section"
+			id="section4"
+		>
+			<div
+				class="container is-align-items-center is-flex"
+			>
+				<div class="columns">
+					<div class="column">
+						<div class="block">
+							<h2
+								class="is-size-2 has-text-centered subtitle"
 							>
-								<i class="fas fa-envelope"></i>
-							</span>
-							<span
-								class="icon is-medium is-right"
+								Contact
+							</h2>
+							<p
+								class="mlp-paragraph has-text-justify two-third-width m-auto"
 							>
-								<i class="fas fa-check"></i>
-							</span>
+								Vous avez une question, une
+								suggestion ou souhaitez simplement
+								prendre contact ? N'hésitez pas à
+								m'envoyer un petit mot 🙃.
+							</p>
 						</div>
-					</div>
-
-					<div class="field">
-						<label class="label" for="subject"
-							>Message</label
+						<form
+							action="mailto:dorian.moulart@gmail.com?subject=ContactArtTherapie:"
+							method="get"
+							enctype="text/plain"
+							class="contact-form mx-auto mt-5"
 						>
-						<div class="control">
-							<textarea
-								id="subject"
-								class="textarea"
-								name="subject"
-								required
-							></textarea>
-						</div>
-					</div>
+							<div class="field">
+								<label class="label" for="email"
+									>Email</label
+								>
+								<div
+									class="control has-icons-left has-icons-right"
+								>
+									<input
+										id="email"
+										class="input is-medium"
+										type="email"
+										placeholder="Votre adresse email"
+										required
+									/>
+									<span
+										class="icon is-medium is-left"
+									>
+										<i
+											class="fas fa-envelope"
+										></i>
+									</span>
+									<span
+										class="icon is-medium is-right"
+									>
+										<i class="fas fa-check"></i>
+									</span>
+								</div>
+							</div>
 
-					<div class="field">
-						<div class="control">
-							<button class="button is-link">
-								Envoyer
-							</button>
-						</div>
+							<div class="field">
+								<label class="label" for="subject"
+									>Message</label
+								>
+								<div class="control">
+									<textarea
+										id="subject"
+										class="textarea"
+										name="subject"
+										placeholder="Votre message"
+										required
+									></textarea>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="control">
+									<button
+										class="button submit-button is-link full-width"
+									>
+										Envoyer
+									</button>
+								</div>
+							</div>
+						</form>
 					</div>
-				</form>
+				</div>
 			</div>
 			<canvas
-				class="Board-Canvas"
+				class="Board-Canvas absolute-origin in-background"
 				id="canvas2"
 			></canvas>
 		</section>

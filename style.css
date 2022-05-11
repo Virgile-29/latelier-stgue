@@ -46,12 +46,7 @@ a {
 	text-decoration: none !important;
 	color: var(--font-main-color) !important;
 }
-ul {
-	list-style-type: none;
-}
 canvas {
-	position: absolute;
-	z-index: var(--backgroundPosition);
 	image-rendering: pixelated;
 }
 
@@ -64,36 +59,12 @@ canvas {
 	margin: auto;
 }
 
-form {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-}
-textarea {
-	height: 30vh;
-}
-input[type='text'],
-input[type='submit'],
-textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-block-start: 1.3vh;
-	margin-block-end: 2vh;
-	resize: none;
-}
-input[type='submit'] {
-	display: flex;
-	justify-content: center;
+.button.is-link.submit-button {
 	background-color: #6ea4b6;
-	color: white;
-	border: none;
-	cursor: pointer;
 }
-input[type='submit']:hover {
-	background-color: #4a7888;
+
+.button.is-link.submit-button:hover {
+	background-color: #6ea4b6;
 }
 .Navbar-menu {
 	display: flex;
@@ -106,6 +77,10 @@ input[type='submit']:hover {
 .Nav-Canvas {
 	z-index: var(--foregroundPosition);
 	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
 }
 .Menu-item {
 	display: flex;
@@ -150,6 +125,9 @@ input[type='submit']:hover {
 	height: 100%;
 	margin-inline-start: 12%;
 	margin-block-start: 10%;
+}
+.subtitle {
+	font-weight: 700;
 }
 .Noms {
 	animation: fadein 3.25s ease-in;
@@ -211,45 +189,7 @@ input[type='submit']:hover {
 	margin-inline-start: 2vw;
 	line-height: 3rem;
 	backdrop-filter: blur(1px);
-}
-.ContactContent {
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
-}
-.ContactText {
-	justify-content: center;
-	margin-inline-end: 0vw;
-}
-.ContactParagraph {
-	margin-inline: 16vw;
-	text-align: center;
-	backdrop-filter: blur(0px);
-}
-.ContactForm {
-	margin-block-start: 7vh;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
-	width: 50vw;
-}
-.ContactBackgroundImage {
-	position: absolute;
-	z-index: var(--backgroundPosition);
-	min-height: 100vh;
-	max-width: 500vw;
-}
-.Navbar a {
-	padding: 2vw;
-	min-height: calc(var(--navbarHeight) - 2vh);
-}
-
-.is-v-centered {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center; /* used this for multiple child */
-	align-items: center; /* if an only child */
+	font-weight: 600;
 }
 
 .column.flex-column,
@@ -258,6 +198,29 @@ input[type='submit']:hover {
 	flex-direction: column;
 	flex-wrap: wrap;
 }
+
+.absolute-origin {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.in-background {
+	z-index: var(--backgroundPosition);
+}
+
+.contact-form {
+	max-width: 600px;
+}
+
+.two-third-width {
+	width: 73%;
+}
+
+.full-width {
+	width: 100%;
+}
+
 @media (max-width: 800px) and (max-height: 1060px) {
 	.Section-Content {
 		flex-flow: column nowrap;
