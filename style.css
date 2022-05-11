@@ -245,6 +245,19 @@ input[type='submit']:hover {
 	min-height: calc(var(--navbarHeight) - 2vh);
 }
 
+.is-v-centered {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center; /* used this for multiple child */
+	align-items: center; /* if an only child */
+}
+
+.column.flex-column,
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
 @media (max-width: 800px) and (max-height: 1060px) {
 	.Section-Content {
 		flex-flow: column nowrap;

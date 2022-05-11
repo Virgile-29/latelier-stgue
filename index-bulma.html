@@ -20,6 +20,13 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 
 	<body>
@@ -130,35 +137,37 @@
 				id="canvas1"
 			></canvas>
 		</section>
-		<section
-			class="mlp-section mx-2"
-			id="section4"
-		>
+		<!-- First section -->
+		<section class="mlp-section section">
 			<div class="columns">
-				<div class="column is-half">
+				<div class="column is-one-third">
 					<figure class="image is-4-by-5 p-5">
 						<img
 							src="mlmb.jpg"
-							class="shadow-frame side-image"
+							class="shadow-frame side-image m-auto"
 						/>
 					</figure>
 				</div>
-				<div class="column is-half">
-					<h2
-						class="is-size-3 has-text-justify subtitle"
-					>
-						Venez rencontrer...
-					</h2>
-					<p class="mlp-paragraph">
-						Marie-Laure Moulart-Barcelo -
-						artiste-mosaïste et art-thérapeute -
-						vous accueille à l’Atelier pour vous
-						initier à sa pratique artistique à
-						travers des cours et stages de
-						mosaïque ponctuels ou réguliers et
-						ouverts à toutes et tous. <br />
-					</p>
-					<div class="mt-5">
+				<div
+					class="column is-two-third flex-column"
+				>
+					<div class="block">
+						<h2
+							class="is-size-3 has-text-justify subtitle"
+						>
+							Venez rencontrer...
+						</h2>
+						<p class="mlp-paragraph">
+							Marie-Laure Moulart-Barcelo -
+							artiste-mosaïste et art-thérapeute -
+							vous accueille à l’Atelier pour vous
+							initier à sa pratique artistique à
+							travers des cours et stages de
+							mosaïque ponctuels ou réguliers et
+							ouverts à toutes et tous. <br />
+						</p>
+					</div>
+					<div class="block mt-auto">
 						<h2
 							class="is-size-3 has-text-justify subtitle"
 						>
@@ -175,7 +184,113 @@
 				</div>
 			</div>
 		</section>
+		<!-- Second section -->
+		<section
+			class="mlp-section section"
+			id="section2"
+		>
+			<div class="columns">
+				<div
+					class="column is-two-third flex-column"
+				>
+					<div class="block">
+						<h2
+							class="is-size-3 has-text-justify subtitle"
+						>
+							La galerie
+						</h2>
+						<p class="mlp-paragraph">
+							Visiter l’Atelier est aussi
+							l’occasion de découvrir les
+							créations originales de Marie-Laure
+							ou de lui passer une commande
+							personnalisée.
+						</p>
+					</div>
+					<div class="block mt-auto">
+						<h2
+							class="is-size-3 has-text-justify subtitle"
+						>
+							L'art thérapie
+						</h2>
+						<p class="mlp-paragraph">
+							Vous pouvez bénéficier à l’Atelier
+							de séances d’art thérapie : un
+							accompagnement thérapeutique
+							individualisé qui exploite votre
+							potentiel artistique pour retrouver
+							sérénité et joie de vivre.
+						</p>
+					</div>
+				</div>
+				<div class="column is-one-third">
+					<figure class="image is-4-by-5 p-5">
+						<img
+							src="mlmb.jpg"
+							class="shadow-frame side-image m-auto"
+						/>
+					</figure>
+				</div>
+			</div>
+		</section>
+		<!-- Third section -->
 		<section class="mlp-section" id="section4">
+			<div class="container">
+				<form
+					action="mailto:dorian.moulart@gmail.com?subject=ContactArtTherapie:"
+					method="get"
+					enctype="text/plain"
+				>
+					<div class="field">
+						<label class="label" for="email"
+							>Email</label
+						>
+						<div
+							class="control has-icons-left has-icons-right"
+						>
+							<input
+								id="email"
+								class="input is-medium"
+								type="email"
+								placeholder="Votre adresse email"
+								required
+							/>
+							<span
+								class="icon is-medium is-left"
+							>
+								<i class="fas fa-envelope"></i>
+							</span>
+							<span
+								class="icon is-medium is-right"
+							>
+								<i class="fas fa-check"></i>
+							</span>
+						</div>
+					</div>
+
+					<div class="field">
+						<label class="label" for="subject"
+							>Message</label
+						>
+						<div class="control">
+							<textarea
+								id="subject"
+								class="textarea"
+								name="subject"
+								required
+							></textarea>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="control">
+							<button class="button is-link">
+								Envoyer
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
 			<canvas
 				class="Board-Canvas"
 				id="canvas2"
