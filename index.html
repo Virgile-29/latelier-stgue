@@ -20,79 +20,147 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 
 	<body>
-		<section class="LandingPage">
-			<canvas
-				class="Board-Canvas"
-				id="canvas1"
-			></canvas>
-			<nav class="Navbar">
-				<ul class="Navbar-menu">
-					<li>
-						<a
-							href="#section1"
-							class="Menu-item Link"
-							>Accueil
-						</a>
-					</li>
-					<li>
-						<a
-							href="#section2"
-							class="Menu-item Link"
-							>Galerie</a
+		<section class="mlp-section">
+			<div class="mt-4 mr-4">
+				<nav class="navbar is-transparent">
+					<div class="navbar-brand">
+						<div
+							class="navbar-burger"
+							data-target="navmenu"
+							aria-label="menu"
+							aria-expanded="false"
 						>
-					</li>
-					<li>
-						<a
-							href="#section3"
-							class="Menu-item Link"
-							>Les cours et stages de mosaiques</a
-						>
-					</li>
-					<li>
-						<a
-							href="#section4"
-							class="Menu-item Link"
-							>&nbsp;Contact&nbsp;</a
-						>
-					</li>
-				</ul>
-			</nav>
-			<div class="Presentation">
-				<div class="Presentation-conteneur">
-					<div class="ArtTherapie">
-						L ' Atelier <br />
-						&nbsp;de Saint-Gué
-					</div>
-					<!-- <div class="Noms">
-						<div class="MarieLaure Nom">
-							Marie-Laure
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
 						</div>
-						<div class="MoulartBarcelo Nom">
-							Moulart Barcelo
+					</div>
+
+					<div id="navmenu" class="navbar-menu">
+						<div class="navbar-start">
+							<!-- <div
+						class="navbar-item has-dropdown is-hoverable"
+					>
+						<div class="navbar-dropdown is-boxed">
+							<a
+								class="navbar-item"
+								href="https://bulma.io/documentation/overview/start/"
+							>
+								Overview
+							</a>
+							<a
+								class="navbar-item"
+								href="https://bulma.io/documentation/overview/modifiers/"
+							>
+								Modifiers
+							</a>
+							<a
+								class="navbar-item"
+								href="https://bulma.io/documentation/columns/basics/"
+							>
+								Columns
+							</a>
+							<a
+								class="navbar-item"
+								href="https://bulma.io/documentation/layout/container/"
+							>
+								Layout
+							</a>
+							<a
+								class="navbar-item"
+								href="https://bulma.io/documentation/form/general/"
+							>
+								Form
+							</a>
+							<hr class="navbar-divider" />
+							<a
+								class="navbar-item"
+								href="https://bulma.io/documentation/elements/box/"
+							>
+								Elements
+							</a>
+							<a
+								class="navbar-item is-active"
+								href="https://bulma.io/documentation/components/breadcrumb/"
+							>
+								Components
+							</a>
 						</div>
 					</div> -->
-				</div>
+						</div>
+						<div class="navbar-end">
+							<a
+								class="navbar-item p-3 mx-3"
+								href="/"
+							>
+								Accueil
+							</a>
+
+							<a
+								href="#section2"
+								class="navbar-item p-3 mx-3"
+								>Galerie</a
+							>
+
+							<a
+								href="#section3"
+								class="navbar-item p-3 mx-3"
+								>Les cours et stages de
+								mosaiques</a
+							>
+
+							<a
+								href="#section3"
+								class="navbar-item p-3 mx-3"
+								>&nbsp;Contact&nbsp;</a
+							>
+						</div>
+					</div>
+				</nav>
 			</div>
-		</section>
-		<section id="section2">
-			<header class="BigTitle-Container">
-				<h1 class="BigTitle">
-					<!-- L o r e m &nbsp;&nbsp;&nbsp; I p s u m -->
+			<div class="mlp-title">
+				<h1 class="has-text-weight-bold">
+					L ' Atelier <br />
+					&nbsp;de Saint-Gué
 				</h1>
-			</header>
-			<div class="Section-Content">
-				<aside class="AsideBlock">
-					<img class="Image" src="mlmb.jpg" />
-				</aside>
-				<div class="TextContent">
-					<div class="TextBlock">
-						<h2 class="Subtitle">
+			</div>
+			<canvas
+				class="Board-Canvas absolute-origin in-background"
+				id="canvas1"
+			></canvas>
+		</section>
+		<!-- First section -->
+		<section class="mlp-section section">
+			<div class="columns">
+				<div class="column is-one-third">
+					<figure class="image is-4-by-5 p-5">
+						<img
+							alt="Marie-Laure Moulart Barcelo"
+							src="mlmb.jpg"
+							class="shadow-frame side-image m-auto"
+						/>
+					</figure>
+				</div>
+				<div
+					class="column is-two-third flex-column"
+				>
+					<div class="block">
+						<h2
+							class="is-size-3 has-text-justify subtitle"
+						>
 							Venez rencontrer...
 						</h2>
-						<p class="Paragraph">
+						<p class="mlp-paragraph">
 							Marie-Laure Moulart-Barcelo -
 							artiste-mosaïste et art-thérapeute -
 							vous accueille à l’Atelier pour vous
@@ -101,56 +169,54 @@
 							mosaïque ponctuels ou réguliers et
 							ouverts à toutes et tous. <br />
 						</p>
-						<!-- <p class="Paragraph">
-							L’Atelier de St-Gué est un lieu de création, d’échange et de partage autour des arts plastiques situé en Pays Bigouden à Saint-Guénolé, Penmarch.
-						</p> -->
 					</div>
-					<div class="TextBlock">
-						<h2 class="Subtitle">L'atelier...</h2>
-						<p class="Paragraph">
+					<div class="block mt-auto">
+						<h2
+							class="is-size-3 has-text-justify subtitle"
+						>
+							L'atelier..
+						</h2>
+						<p class="mlp-paragraph">
 							L’Atelier de St-Gué est un lieu de
 							création, d’échange et de partage
 							autour des arts plastiques situé en
 							Pays Bigouden à Saint-Guénolé,
-							Penmarch.
+							Penmarch. <br />
 						</p>
 					</div>
 				</div>
 			</div>
 		</section>
-
-		<section id="section3">
-			<header class="BigTitle-Container">
-				<!-- <h1 class="BigTitle">
-					  L o r e m &nbsp;&nbsp;&nbsp; I p s u m 
-				</h1> -->
-			</header>
-			<div class="Section-Content">
-				<div class="TextContent">
-					<div class="TextBlock">
-						<h2 class="Subtitle">La galerie</h2>
-						<p class="Paragraph">
+		<!-- Second section -->
+		<section
+			class="mlp-section section"
+			id="section2"
+		>
+			<div class="columns">
+				<div
+					class="column is-two-third flex-column"
+				>
+					<div class="block">
+						<h2
+							class="is-size-3 has-text-justify subtitle"
+						>
+							La galerie
+						</h2>
+						<p class="mlp-paragraph">
 							Visiter l’Atelier est aussi
 							l’occasion de découvrir les
 							créations originales de Marie-Laure
 							ou de lui passer une commande
 							personnalisée.
 						</p>
-						<!-- <p class="Paragraph">
-							Lorem ipsum dolor sit amet
-							consectetur, adipisicing elit.
-							Adipisci mollitia voluptates ad,
-							illum voluptatum aliquam quod
-							nesciunt recusandae dignissimos sunt
-							dolore eius facere nam optio quae
-							molestiae? A, est beatae?
-						</p> -->
 					</div>
-					<div class="TextBlock">
-						<h2 class="Subtitle">
+					<div class="block mt-auto">
+						<h2
+							class="is-size-3 has-text-justify subtitle"
+						>
 							L'art thérapie
 						</h2>
-						<p class="Paragraph">
+						<p class="mlp-paragraph">
 							Vous pouvez bénéficier à l’Atelier
 							de séances d’art thérapie : un
 							accompagnement thérapeutique
@@ -158,133 +224,116 @@
 							potentiel artistique pour retrouver
 							sérénité et joie de vivre.
 						</p>
-						<!-- <p class="Paragraph">
-							Lorem ipsum dolor sit amet
-							consectetur, adipisicing elit.
-							Adipisci mollitia voluptates ad,
-							illum voluptatum aliquam quod
-							nesciunt recusandae dignissimos sunt
-							dolore eius facere nam optio quae
-							molestiae? A, est beatae?
-						</p> -->
 					</div>
-					<!-- <div class="TextBlock">
-						<h2 class="Subtitle">
-							Uod nesciunt recusandae
-						</h2>
-						<p class="Paragraph">
-							Lorem ipsum dolor sit amet
-							consectetur, adipisicing elit.
-							Adipisci mollitia voluptates ad,
-							illum voluptatum aliquam quod
-							nesciunt recusandae dignissimos sunt
-							dolore eius facere nam optio quae
-							molestiae? A, est beatae?
-						</p>
-						<p class="Paragraph">
-							Lorem ipsum dolor sit amet
-							consectetur, adipisicing elit.
-							Adipisci mollitia voluptates ad,
-							illum voluptatum aliquam quod
-							nesciunt recusandae dignissimos sunt
-							dolore eius facere nam optio quae
-							molestiae? A, est beatae?
-						</p>
-						<p class="Paragraph">
-							Lorem ipsum dolor sit amet
-							consectetur, adipisicing elit.
-							Adipisci mollitia voluptates ad,
-							illum voluptatum aliquam quod
-							nesciunt recusandae dignissimos sunt
-							dolore eius facere nam optio quae
-							molestiae? A, est beatae?
-						</p>
-					</div> -->
 				</div>
-				<aside class="AsideBlock AsideText">
-					<img
-						class="Image"
-						src="brushStrokes.png"
-						style="
-							object-fit: cover;
-							height: 500px;
-							max-width: 80vw;
-							/*margin: auto;*/
-						"
-					/>
-					<!-- <div class="TextBlock"> -->
-					<!-- <h2 class="Subtitle">
-							Uod nesciunt recusandae
-						</h2>
-						<p class="Paragraph">
-							Lorem ipsum dolor sit amet
-							consectetur, adipisicing elit.
-							Adipisci mollitia voluptates ad,
-							illum voluptatum aliquam quod
-							nesciunt recusandae dignissimos sunt
-							dolore eius facere nam optio quae
-							molestiae? A, est beatae?
-						</p>
-						<p class="Paragraph">
-							Lorem ipsum dolor sit amet
-							consectetur, adipisicing elit.
-							Adipisci mollitia voluptates ad,
-							illum voluptatum aliquam quod
-							nesciunt recusandae dignissimos sunt
-							dolore eius facere nam optio quae
-							molestiae? A, est beatae?
-						</p> -->
-					<!-- </div> -->
-				</aside>
+				<div class="column is-one-third">
+					<figure class="image is-4-by-5 p-5">
+						<img
+							alt="Tableau"
+							src="brushStrokes.png"
+							style="
+								object-fit: cover;
+								height: 500px;
+								max-width: 80vw;
+							"
+							class="shadow-frame side-image m-auto"
+						/>
+					</figure>
+				</div>
 			</div>
 		</section>
-
-		<section id="section4">
-			<header
-				class="BigTitle-Container ContactText"
+		<!-- Third section -->
+		<section
+			class="mlp-section section"
+			id="section4"
+		>
+			<div
+				class="container is-align-items-center is-flex"
 			>
-				<h1 class="BigTitle">C o n t a c t</h1>
-			</header>
-			<div class="Section-Content ContactContent">
-				<div class="TextBlock">
-					<p class="Paragraph ContactParagraph">
-						Vous avez une question, une suggestion
-						ou souhaitez simplement prendre
-						contact ? N'hésitez pas à m'envoyer un
-						petit mot 🙃.
-					</p>
+				<div class="columns">
+					<div class="column">
+						<div class="block">
+							<h2
+								class="is-size-2 has-text-centered subtitle"
+							>
+								Contact
+							</h2>
+							<p
+								class="mlp-paragraph has-text-justify two-third-width m-auto"
+							>
+								Vous avez une question, une
+								suggestion ou souhaitez simplement
+								prendre contact ? N'hésitez pas à
+								m'envoyer un petit mot 🙃.
+							</p>
+						</div>
+						<form
+							action="mailto:dorian.moulart@gmail.com?subject=ContactArtTherapie:"
+							method="get"
+							enctype="text/plain"
+							class="contact-form mx-auto mt-5"
+						>
+							<div class="field">
+								<label class="label" for="email"
+									>Email</label
+								>
+								<div
+									class="control has-icons-left has-icons-right"
+								>
+									<input
+										id="email"
+										class="input is-medium"
+										type="email"
+										placeholder="Votre adresse email"
+										required
+									/>
+									<span
+										class="icon is-medium is-left"
+									>
+										<i
+											class="fas fa-envelope"
+										></i>
+									</span>
+									<span
+										class="icon is-medium is-right"
+									>
+										<i class="fas fa-check"></i>
+									</span>
+								</div>
+							</div>
+
+							<div class="field">
+								<label class="label" for="subject"
+									>Message</label
+								>
+								<div class="control">
+									<textarea
+										id="subject"
+										class="textarea"
+										name="subject"
+										placeholder="Votre message"
+										required
+									></textarea>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="control">
+									<button
+										class="button submit-button is-link full-width"
+									>
+										Envoyer
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
-				<form
-					action="mailto:dorian.moulart@gmail.com?subject=ContactArtTherapie:"
-					method="get"
-					enctype="text/plain"
-					class="ContactForm"
-				>
-					<label for="fname">Email</label>
-					<input
-						type="text"
-						id="fname"
-						name="firstname"
-						placeholder="Votre addresse mail..."
-						type="email"
-						pattern=".+@globex\.com"
-						required
-					/>
-					<label for="subject">Message</label>
-					<textarea
-						id="subject"
-						name="subject"
-						class="subject"
-						required
-					></textarea>
-					<input type="submit" value="Envoyer" />
-				</form>
 			</div>
 			<canvas
-				class="Board-Canvas"
+				class="Board-Canvas absolute-origin in-background"
 				id="canvas2"
 			></canvas>
-			<!-- <img src="ContactFormBackground.png" class="ContactBackgroundImage">-->
 		</section>
 	</body>
 
@@ -301,4 +350,34 @@
 
 	<script src="brushStrokesDefs.js "></script>
 	<script src="canvasDisplay.js "></script>
+
+	<script>
+		document.addEventListener(
+			'DOMContentLoaded',
+			() => {
+				// Get all "navbar-burger" elements
+				const $navbarBurgers =
+					Array.prototype.slice.call(
+						document.querySelectorAll(
+							'.navbar-burger'
+						),
+						0
+					);
+
+				// Add a click event on each of them
+				$navbarBurgers.forEach((el) => {
+					el.addEventListener('click', () => {
+						// Get the target from the "data-target" attribute
+						const target = el.dataset.target;
+						const $target =
+							document.getElementById(target);
+
+						// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+						el.classList.toggle('is-active');
+						$target.classList.toggle('is-active');
+					});
+				});
+			}
+		);
+	</script>
 </html>
