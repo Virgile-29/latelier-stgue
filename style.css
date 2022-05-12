@@ -112,6 +112,17 @@ canvas {
 	width: 100%;
 }
 
+.navbar-item {
+	font-variant-caps: petite-caps;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 24px !important;
+}
+
+.navbar-item .icon {
+	margin-right: 12px;
+}
+
 @keyframes fadein {
 	0% {
 		opacity: 0;
