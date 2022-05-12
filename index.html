@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
-		<title>>MLMB Art-Thérapie</title>
+		<title>MLMB Art-Thérapie</title>
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
@@ -13,7 +13,7 @@
 			href="https://fonts.gstatic.com"
 		/>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700"
 			rel="stylesheet"
 		/>
 		<link
@@ -93,11 +93,14 @@
 		<section class="mlp-section section">
 			<div class="columns">
 				<div class="column is-one-third">
-					<figure class="image is-4-by-5 p-5">
+					<figure
+						class="image is-4-by-5 p-5 is-hidden-mobile"
+					>
 						<img
 							alt="Marie-Laure Moulart Barcelo"
 							src="mlmb.jpg"
 							class="shadow-frame side-image m-auto"
+							loading="lazy"
 						/>
 					</figure>
 				</div>
@@ -120,6 +123,16 @@
 							ouverts à toutes et tous. <br />
 						</p>
 					</div>
+					<figure
+						class="image is-4-by-5 p-5 is-hidden-tablet"
+					>
+						<img
+							alt="Marie-Laure Moulart Barcelo"
+							src="mlmb.jpg"
+							class="shadow-frame side-image m-auto"
+							loading="lazy"
+						/>
+					</figure>
 					<div class="block mt-auto">
 						<h2
 							class="is-size-3 has-text-justify subtitle"
@@ -160,6 +173,21 @@
 							personnalisée.
 						</p>
 					</div>
+					<figure
+						class="image is-4-by-5 p-5 is-hidden-tablet"
+					>
+						<img
+							alt="Tableau"
+							src="brushStrokes.png"
+							style="
+								object-fit: cover;
+								height: 500px;
+								max-width: 80vw;
+							"
+							class="shadow-frame side-image m-auto"
+							loading="lazy"
+						/>
+					</figure>
 					<div class="block mt-auto">
 						<h2
 							class="is-size-3 has-text-justify subtitle"
@@ -186,7 +214,8 @@
 								height: 500px;
 								max-width: 80vw;
 							"
-							class="shadow-frame side-image m-auto"
+							class="shadow-frame side-image m-auto is-hidden-mobile"
+							loading="lazy"
 						/>
 					</figure>
 				</div>

@@ -68,7 +68,10 @@ canvas {
 	height: 100%;
 	margin-inline-start: 12%;
 	margin-block-start: 10%;
+	position: absolute;
+	top: 10%;
 }
+
 .subtitle {
 	font-weight: 700;
 }
