@@ -1,7 +1,7 @@
 const totalSections = 4;
 
 let boardCanvareas = new Array(2);
-let navCanvareas = new Array(totalSections);
+let navCanvareas = new Array(5);
 
 let { windowHeight, windowWidth } =
 	setWindowDimensions();
@@ -10,8 +10,9 @@ let navLinks = Array.from(
 	document.querySelectorAll('.navbar-item')
 );
 
-let mustPaintNavBs = [false, false, false, false];
+let mustPaintNavBs = [false, false, false, false, false];
 let mustDeleteNavBs = [
+	false,
 	false,
 	false,
 	false,
@@ -26,10 +27,11 @@ let initNavBrushStrokes = [
 	initializeNavBsGreen,
 	initializeNavBsBlue,
 	initializeNavBsBeige,
+	initializeNavBsRed,
 ];
 
 let boardBrushStrokes = new Array(2);
-let navBrushStrokes = new Array(totalSections);
+let navBrushStrokes = new Array(5);
 
 let secondsPassed = 0;
 let oldTimeStamp = 0;
