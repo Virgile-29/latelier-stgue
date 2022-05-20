@@ -188,3 +188,26 @@ function initializeNavBsBeige(i) {
 
 	return bs;
 }
+function initializeNavBsRed(i) {
+	let line = new Line(
+		10,
+		navCanvareas[i].htmlCanvas.height * 0.75,
+		navCanvareas[i].htmlCanvas.width - 10,
+		navCanvareas[i].htmlCanvas.height * 0.75,
+		'black',
+		1,
+		'unstable',
+		false
+	);
+	line.granularityCoefficients['spatial'] = 2;
+	line.granularityCoefficients['width'] = 1;
+	let bs = new BrushStroke(line, 5);
+	bs.deviation = 2;
+	bs.widthDistribution('linear', [2, 2]);
+	bs.colorDistribution('gradient', [
+		'#baa898',
+		'#baa898',
+	]);
+
+	return bs;
+}
