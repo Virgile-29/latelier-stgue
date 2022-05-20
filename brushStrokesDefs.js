@@ -205,8 +205,8 @@ function initializeNavBsRed(i) {
 	bs.deviation = 2;
 	bs.widthDistribution('linear', [2, 2]);
 	bs.colorDistribution('gradient', [
-		'#a55642',
-		'#a55642',
+		'#baa898',
+		'#baa898',
 	]);
 
 	return bs;
