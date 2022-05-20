@@ -10,6 +10,8 @@ let navLinks = Array.from(
 	document.querySelectorAll('.navbar-item')
 );
 
+console.log(navLinks) //
+
 let mustPaintNavBs = [false, false, false, false];
 let mustDeleteNavBs = [
 	false,

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>MLMB Art-Thérapie</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+	</head>
+
+  <body>
+    <section class="section" >
+			<div class="mt-4 mr-4">
+				<nav class="navbar is-transparent">
+					<div class="navbar-brand">
+						<div
+							class="navbar-burger"
+							data-target="navmenu"
+							aria-label="menu"
+							aria-expanded="false"
+						>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+						</div>
+					</div>
+
+					<div id="navmenu" class="navbar-menu">
+						<div class="navbar-start"></div>
+						<div class="navbar-end">
+							<a
+								class="navbar-item mx-3"
+								href="index.html"
+							>
+								<span class="icon">
+									<i class="fas fa-home"></i>
+								</span>
+								Accueil
+							</a>
+
+							<a
+								href="galerie.html"
+								class="navbar-item mx-3"
+							>
+								<span class="icon">
+									<i
+										class="fa-solid fa-palette"
+									></i>
+								</span>
+								Galerie
+							</a>
+
+							<a
+								href="coursStages.html"
+								class="navbar-item mx-3"
+							>
+								<span class="icon">
+									<i
+										class="fa-solid fa-person-chalkboard"
+									></i>
+								</span>
+								Les cours et stages de
+								mosaiques</a
+							>
+
+							<a
+							href="art_therapie.html"
+							class="navbar-item mx-3"
+						>
+							<span class="icon">
+								<i
+									class="fa-solid fa-person-chalkboard"
+								></i>
+							</span>
+							L'art Thérapie</a
+						>
+
+							<a
+								href="#section3"
+								class="navbar-item mx-3"
+							>
+								<span class="icon">
+									<i
+										class="fa-solid fa-envelope"
+									></i>
+								</span>
+								&nbsp;Contact&nbsp;
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</section>
+    <section class="section carousel-section">
+      <div class="container">
+        <!-- Start Carousel -->
+        <div id="carousel" class="carousel">
+          <div class="card item-1">
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img src="Galerie/galerie1.jpg" alt="" class="">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                Description
+              </div>
+            </div>
+          </div>
+          <div class="card item-2">
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img src="Galerie/galerie2.png" alt="" class="">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                Description
+              </div>
+            </div>
+          </div>
+          <div class="card item-3">
+            <div class="card-image">
+              <figure class="image is-1by1">
+                <img src="Galerie/galerie3.png" alt="" class="">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                Description
+              </div>
+            </div>
+          </div>
+        
+      </div> <!-- End Carousel -->
+    </section>
+
+  </body>
+
+  
+	<!-- <script src="./Canima/Support/Canvarea.js "></script>
+	<script src="./Canima/Geometry/Figure.js "></script>
+	<script src="./Canima/Geometry/Line.js "></script>
+	<script src="./Canima/Geometry/Curve.js "></script>
+	<script src="./Canima/Medium/Filter.js "></script>
+	<script src="./Canima/Medium/Brushstroke.js "></script>
+	<script src="./Canima/Color/Gradient.js "></script>
+	<script src="./Canima/Geometry/Text.js "></script>
+
+	<script src="./Canima/Architecture/Canima.js "></script>
+
+	<script src="brushStrokesDefs.js "></script>
+	<script src="canvasDisplay.js "></script> -->
+
+  <script>
+		document.addEventListener(
+			'DOMContentLoaded',
+			() => {
+				// Get all "navbar-burger" elements
+				const $navbarBurgers =
+					Array.prototype.slice.call(
+						document.querySelectorAll(
+							'.navbar-burger'
+						),
+						0
+					);
+
+				// Add a click event on each of them
+				$navbarBurgers.forEach((el) => {
+					el.addEventListener('click', () => {
+						// Get the target from the "data-target" attribute
+						const target = el.dataset.target;
+						const $target =
+							document.getElementById(target);
+
+						// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+						el.classList.toggle('is-active');
+						$target.classList.toggle('is-active');
+					});
+				});
+			}
+		);
+	</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+<script>
+
+// Initialize all div with carousel class
+const options = {
+  slidesToShow: 1,
+  loop: true
+}
+const carousels = bulmaCarousel.attach('.carousel', options);
+
+//Loop on each carousel initialized
+for(var i = 0; i < carousels.length ; i++) {
+  //Add Listener event
+  carousels[i].on('before:show', state => {
+    console.log(state);
+  })
+}
+
+// Access to bulmaCarousel instance of an element
+
+let element = document.querySelector('#my-element');
+if(element && element.bulmaCarousel) {
+  //bulmaCarousel instance is available as element.bulmaCarousel
+  element.bulmaCarousel.on('before-show', function(state) {
+    console.log(state);
+
+  }) 
+  
+}
+
+</script>
+</html>

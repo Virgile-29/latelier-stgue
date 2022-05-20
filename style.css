@@ -131,3 +131,11 @@ canvas {
 		opacity: 1;
 	}
 }
+
+
+/* Virgile CSS OVER9K */
+
+.carousel-section {
+	max-height: 50%;
+	width: 25%;
+}
