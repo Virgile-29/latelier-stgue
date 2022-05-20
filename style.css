@@ -123,6 +123,16 @@ canvas {
 	margin-right: 12px;
 }
 
+.bg-blue {
+	background-color: aliceblue;
+}
+
+@media (max-width: 769px) {
+	#navmenu {
+		position: absolute;
+	}
+}
+
 @keyframes fadein {
 	0% {
 		opacity: 0;
