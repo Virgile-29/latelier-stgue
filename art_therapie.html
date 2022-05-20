@@ -89,10 +89,10 @@
       <section class="section" style="padding-top: 15vh">
         <div class="container">
           <div class="columns">
-            <div class="column">
-              <figure class="image mx-auto my-auto is-hidden-mobile">
+            <div class="column is-hidden-mobile">
+              <figure class="image mx-auto my-auto">
                 <img
-                  style="max-height: 800px; width: 80%; object-fit: cover"
+                  style="max-height: 100%; width: 80%; object-fit: cover"
                   src="./poissons-detail.png"
                   alt="image-cours-adulte-atelier"
                 />
@@ -117,7 +117,7 @@
                   inconscientes et conduire à une transformation positive.
                 </p>
               </div>
-              <figure class="image mx-auto my-auto is-hidden-tablet mx-auto">
+              <figure class="image mx-auto my-auto is-hidden-tablet my-5">
                 <img
                   style="max-height: 800px; object-fit: cover"
                   src="./poissons-detail.png"
@@ -169,4 +169,26 @@
 
   <script src="brushStrokesDefs.js "></script>
   <script src="canvasDisplay.js "></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach((el) => {
+        el.addEventListener("click", () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle("is-active");
+          $target.classList.toggle("is-active");
+        });
+      });
+    });
+  </script>
 </html>

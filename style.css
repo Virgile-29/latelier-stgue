@@ -127,9 +127,10 @@ canvas {
 	background-color: aliceblue;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 869px) {
 	#navmenu {
 		position: absolute;
+		width:100%;
 	}
 }
 
