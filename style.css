@@ -127,6 +127,16 @@ canvas {
 	background-color: aliceblue;
 }
 
+.galery-container{
+	max-width: 80% !important;
+}
+
+.image-galerie {
+	object-fit: cover;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
 @media (max-width: 869px) {
 	#navmenu {
 		position: absolute;
@@ -146,17 +156,11 @@ canvas {
 
 /* Virgile CSS OVER9K */
 
-
-.image-galerie {
-	object-fit: cover;
-	padding-right: 2%;
-	padding-left: 2%;
-}
-
 @media (max-width: 769px) {
 
 	.image-tile {
-		width: 100vw;
+		width: 100%;
+		margin-inline: 20px;
 	}
 
 	.image-galerie {
@@ -164,6 +168,9 @@ canvas {
 		width: 100vw;
 		padding-right: 0;
 		padding-left: 0;
-		margin-inline: 24px;
+	}
+
+	.galery-container {
+		width: 80%;
 	}
 }
