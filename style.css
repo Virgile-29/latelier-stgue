@@ -138,6 +138,10 @@ canvas {
 	margin-block: 10px;
 }
 
+.section.galery-container {
+	max-width: 800px !important;
+}
+
 @media (max-width: 869px) {
 	#navmenu {
 		position: absolute;
