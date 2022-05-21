@@ -13,9 +13,10 @@ html {
 	);
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+	font-size:20px;
 }
 body {
-	font-size: 1.25rem;
+	font-size: 1.20em !important;
 	font-family: 'Comfortaa', cursive !important;
 }
 nav {
