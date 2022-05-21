@@ -29,7 +29,7 @@ nav {
 	min-height: var(--sectionHeight);
 	width: 100vw;
 }
-a {
+nav a {
 	text-decoration: none !important;
 	color: var(--font-main-color) !important;
 }
