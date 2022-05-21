@@ -188,7 +188,7 @@ function initializeNavBsBeige(i) {
 
 	return bs;
 }
-function initializeNavBsRed(i) {
+function initializeNavBsMaroon(i) {
 	let line = new Line(
 		10,
 		navCanvareas[i].htmlCanvas.height * 0.75,
