@@ -128,7 +128,7 @@ canvas {
 }
 
 .galery-container{
-	max-width: 80% !important;
+	max-width: 80%; /*!important;*/
 }
 
 .image-galerie {
@@ -165,12 +165,18 @@ canvas {
 
 	.image-galerie {
 		height: 805px;
-		width: 100vw;
+		width: 100%;
 		padding-right: 0;
 		padding-left: 0;
 	}
 
 	.galery-container {
-		width: 80%;
+		width: 100%;
+	}
+
+	.section.galery-container{
+		padding: 0;
+		margin: 0;
+		max-width: 100%;
 	}
 }
