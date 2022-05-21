@@ -75,6 +75,12 @@ canvas {
 .subtitle {
 	font-weight: 700;
 }
+
+.nav-title{
+	font-weight: 800;
+	font-variant-caps: petite-caps;
+}
+
 .mlp-paragraph {
 	margin-block-end: 1.5rem; /*Intégrer les marges dans le calcul des hauteurs ??*/
 	margin-inline-start: 2vw;
