@@ -157,6 +157,18 @@ canvas {
 
 /* Virgile CSS OVER9K */
 
+.mobile-title {
+	display: flex;
+	margin: 0;
+	margin-left: 15%;
+	align-items: center;
+	justify-content: center;
+	animation: fadein 2s ease-out;
+	font-size: calc(1rem + 5.2vw);
+	font-weight: 700;
+	color: #5c5c5c;
+}
+
 @media (max-width: 769px) {
 
 	.image-tile {
