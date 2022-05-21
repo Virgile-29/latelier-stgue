@@ -146,7 +146,24 @@ canvas {
 
 /* Virgile CSS OVER9K */
 
-.carousel-section {
-	max-height: 50%;
-	width: 25%;
+
+.image-galerie {
+	object-fit: cover;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+@media (max-width: 769px) {
+
+	.image-tile {
+		width: 100%;
+	}
+
+	.image-galerie {
+		height: 805px;
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+		margin-inline: 24px;
+	}
 }
