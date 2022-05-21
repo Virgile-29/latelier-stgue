@@ -156,12 +156,12 @@ canvas {
 @media (max-width: 769px) {
 
 	.image-tile {
-		width: 100%;
+		width: 100vw;
 	}
 
 	.image-galerie {
 		height: 805px;
-		width: 100%;
+		width: 100vw;
 		padding-right: 0;
 		padding-left: 0;
 		margin-inline: 24px;
