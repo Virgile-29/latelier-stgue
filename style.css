@@ -135,6 +135,7 @@ canvas {
 	object-fit: cover;
 	padding-right: 2%;
 	padding-left: 2%;
+	margin-block: 10px;
 }
 
 @media (max-width: 869px) {
@@ -159,8 +160,9 @@ canvas {
 @media (max-width: 769px) {
 
 	.image-tile {
-		width: 100%;
-		margin-inline: 20px;
+		width: 90%;
+		margin: 20px;
+
 	}
 
 	.image-galerie {
