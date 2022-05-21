@@ -66,7 +66,13 @@
 					</div>
 				</div>
 			</nav>
+			<canvas
+			class="Board-Canvas absolute-origin in-background"
+			id="canvas1"
+			style="display: none;"
+		></canvas>
 		</div>
+
 	</section>
 	<section class="container" style="width: 100vh":>
 		<div class="block" style="padding-bottom: 5%;">
@@ -75,48 +81,47 @@
 		<div class="tile is-ancestor">
 			<!--Tile Wrapper-->
 				<div class="is-parent is-vertical">
-						<div class="">
-							<figure class="tile is-child">
-								<img src="Galerie/galerie1.jpg" class="image-container" alt="">
+							<figure class="tile image-tile is-child">
+								<img src="Galerie/galerie1.jpg" class="image-galerie" alt="">
 							</figure>
-						</div>
-						<div class="">
+
 							<figure class="tile is-child">
-								<img src="Galerie/galerie2.jpg" class="image-container" alt="">
+								<img src="Galerie/galerie2.jpg" class="image-galerie" alt="">
 							</figure>
-						</div>
-						<div class="">
 							<figure class="tile is-child">
-								<img src="Galerie/galerie3.jpg" class="image-container" alt="">
+								<img src="Galerie/galerie3.jpg" class="image-galerie" alt="">
 							</figure>
-						</div>
 				</div>
 
 				<div class="is-parent">
-						<div class="tile is-child">
+						<div class="tile image-tile is-child">
 							<figure>
-								<img src="Galerie/galerie4.jpg" alt="" class="image-container">
+								<img src="Galerie/galerie4.jpg" alt="" class="image-galerie">
 							</figure>
 						</div>
-						<div class="tile is-child">
+						<div class="tile image-tile is-child">
 							<figure>
-								<img src="Galerie/galerie5.jpg" alt="" class="image-container">
+								<img src="Galerie/galerie5.jpg" alt="" class="image-galerie">
 							</figure>
 						</div>
-						<div class="tile is-child">
+						<div class="tile image-tile is-child">
 							<figure>
-								<img src="Galerie/galerie6.jpg" alt="" class="image-container">
+								<img src="Galerie/galerie6.jpg" alt="" class="image-galerie">
 							</figure>
 						</div>
 				</div>
 			</div>
 	</section>
 
+	<section class="mlp-section section" id="section4" style="display: none;">
+
+		<canvas class="Board-Canvas absolute-origin in-background" id="canvas2"></canvas>
+</section>
 
 </body>
 
 
-<!-- <script src="./Canima/Support/Canvarea.js "></script>
+<script src="./Canima/Support/Canvarea.js "></script>
 	<script src="./Canima/Geometry/Figure.js "></script>
 	<script src="./Canima/Geometry/Line.js "></script>
 	<script src="./Canima/Geometry/Curve.js "></script>
@@ -128,7 +133,7 @@
 	<script src="./Canima/Architecture/Canima.js "></script>
 
 	<script src="brushStrokesDefs.js "></script>
-	<script src="canvasDisplay.js "></script> -->
+	<script src="canvasDisplay.js "></script>
 
 <script>
 	document.addEventListener(
