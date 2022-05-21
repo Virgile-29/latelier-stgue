@@ -127,6 +127,10 @@ canvas {
 	background-color: aliceblue;
 }
 
+.bg-white {
+	background-color: rgba(255, 255, 255, 0.446);
+}
+
 .galery-container{
 	max-width: 80%; /*!important;*/
 }
