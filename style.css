@@ -135,7 +135,11 @@ canvas {
 
 /* Virgile CSS OVER9K */
 
-.carousel-section {
-	max-height: 50%;
-	width: 25%;
+
+.image-container {
+	/* height: 455px;
+	width: 519px; */
+	object-fit: cover;
+	padding-right: 2%;
+	padding-left: 2%;
 }
