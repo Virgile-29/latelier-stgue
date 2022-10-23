@@ -28,15 +28,13 @@
   </head>
 
   <body>
-    <section class="section" style="padding: 0;">
+    <section class="section" style="padding: 0">
       <div class="mt-4 mr-4">
         <nav class="navbar is-transparent">
           <div class="navbar-brand">
-						<div class="mobile-title is-hidden-desktop">
-							<h3 class="subtitle nav-title">
-								L'atelier de St Gué
-							</h3>
-						</div>
+            <div class="mobile-title is-hidden-desktop">
+              <h3 class="subtitle nav-title">L'atelier de St Gué</h3>
+            </div>
             <div
               class="navbar-burger"
               data-target="navmenu"
@@ -92,181 +90,344 @@
         <canvas
           class="Board-Canvas absolute-origin in-background"
           id="canvas1"
-          
         ></canvas>
       </div>
-
     </section>
-		<section class="section mt-5" >
-			<div class="container">
-				<div class="block">
-					<h2 class="is-size-3 has-text-justify subtitle">
-						Créations sur commande
-					</h2>
-					<p class="mlp-paragraph content">
-						L’atelier vous propose des <strong> créations personnelles </strong> comme du mobilier, de l’art de la table, des tableaux, des fresques intérieures et extérieures.
-						Toutes vos envies ou projets personnels peuvent être réalisés avec un devis sur mesure. Pour toute information supplémentaire, <a href="index.html#section4">contacter</a>  l’Atelier.
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<section class="section">
-			<div class="block">
-					<h2 class="is-size-3 has-text-justify subtitle">La Galerie, quelques créations...</h2>
-			</div>
-
-      <div class="container carousel-container">
-        <!-- Start Carousel -->
-				<div id="carousel-demo" class="carousel container">
-					<div class="item-1 ">
-						<!-- Slide Content -->
-            <figure class=" is-centered">
-              <img class ="image-carousel is-centered"  src="Galerie/Tableaux/AlguesPourpres.jpg" alt="Algues pourpres">
-            </figure>
-					</div>
-					<div class="item-2 ">
-						<figure class=" ">
-              <img class="image-carousel is-centered" src="Galerie/Tableaux/AlguesPourpres.jpg" alt="Algues pourpres">
-            </figure>
-					</div>
-					<div class="item-3 ">
-						<figure class=" ">
-              <img class ="image-carousel is-centered" src="Galerie/Tableaux/AlguesPourpres.jpg" alt="Algues pourpres">
-            </figure>
-					</div>
-				</div>
-				<!-- End Carousel -->
-
+    <section class="section mt-5">
+      <div class="container">
+        <div class="block">
+          <h2 class="is-size-3 has-text-justify subtitle">
+            Créations sur commande
+          </h2>
+          <p class="mlp-paragraph content">
+            L’atelier vous propose des
+            <strong> créations personnelles </strong> comme du mobilier, de
+            l’art de la table, des tableaux, des fresques intérieures et
+            extérieures. Toutes vos envies ou projets personnels peuvent être
+            réalisés avec un devis sur mesure. Pour toute information
+            supplémentaire,
+            <a href="index.html#section4">contacter</a> l’Atelier.
+          </p>
+        </div>
       </div>
-		</section>
-		<section
-			class="section container galery-container"
-		>
-			<!-- <div class="tile is-ancestor">
-				Tile Wrapper
-				<div class="is-parent is-vertical">
-					<figure class="tile image-tile js-modal-trigger" data-target="modal-photo1">
-						<img src="Galerie/Mosaique10.jpg" class="image-galerie" alt="" />
-					</figure>
+    </section>
 
-            <div id="modal-photo1" class="modal">
-              <div class="modal-background"></div>
-              <div class="modal-content">
-                <figure class="image">
-                  <img src="Galerie/Mosaique10.jpg" class="image-galerie" alt="" />
-                </figure>
-              </div>
+    <section class="section">
+      <div class="block">
+        <h2 class="is-size-3 has-text-justify subtitle">
+          La Galerie, quelques créations...
+        </h2>
+      </div>
+
+      <style>
+        @keyframes tonext {
+          75% {
+            left: 0;
+          }
+          95% {
+            left: 100%;
+          }
+          98% {
+            left: 100%;
+          }
+          99% {
+            left: 0;
+          }
+        }
+
+        @keyframes tostart {
+          75% {
+            left: 0;
+          }
+          95% {
+            left: -300%;
+          }
+          98% {
+            left: -300%;
+          }
+          99% {
+            left: 0;
+          }
+        }
+
+        @keyframes snap {
+          96% {
+            scroll-snap-align: center;
+          }
+          97% {
+            scroll-snap-align: none;
+          }
+          99% {
+            scroll-snap-align: none;
+          }
+          100% {
+            scroll-snap-align: center;
+          }
+        }
+
+        .carousel-container {
+          max-width: 37.5rem;
+          margin: 0 auto;
+          padding: 0 1.25rem;
+          font-family: "Lato", sans-serif;
+        }
+
+        * {
+          box-sizing: border-box;
+          scrollbar-color: transparent transparent; /* thumb and track color */
+          scrollbar-width: 0px;
+        }
+
+        *::-webkit-scrollbar {
+          width: 0;
+        }
+
+        *::-webkit-scrollbar-track {
+          background: transparent;
+        }
+
+        *::-webkit-scrollbar-thumb {
+          background: transparent;
+          border: none;
+        }
+
+        * {
+          -ms-overflow-style: none;
+        }
+
+        ol,
+        li {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .carousel {
+          position: relative;
+          padding-top: 75%;
+          filter: drop-shadow(0 0 10px #0003);
+          perspective: 100px;
+        }
+
+        .carousel__viewport {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          overflow-x: scroll;
+          counter-reset: item;
+          scroll-behavior: smooth;
+          scroll-snap-type: x mandatory;
+        }
+
+        .carousel__slide {
+          position: relative;
+          flex: 0 0 100%;
+          width: 100%;
+          background-color: #f99;
+          counter-increment: item;
+        }
+
+        .carousel__slide:nth-child(even) {
+          background-color: #99f;
+        }
+
+        .carousel__slide:before {
+          content: counter(item);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -40%, 70px);
+          color: #fff;
+          font-size: 2em;
+        }
+
+        .carousel__snapper {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          scroll-snap-align: center;
+        }
+
+        @media (hover: hover) {
+          .carousel__snapper {
+            animation-name: tonext, snap;
+            animation-timing-function: ease;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+          }
+
+          .carousel__slide:last-child .carousel__snapper {
+            animation-name: tostart, snap;
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .carousel__snapper {
+            animation-name: none;
+          }
+        }
+
+        .carousel:hover .carousel__snapper,
+        .carousel:focus-within .carousel__snapper {
+          animation-name: none;
+        }
+
+        .carousel__navigation {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          text-align: center;
+        }
+
+        .carousel__navigation-list,
+        .carousel__navigation-item {
+          display: inline-block;
+        }
+
+        .carousel__navigation-button {
+          display: inline-block;
+          width: 1.5rem;
+          height: 1.5rem;
+          background-color: #333;
+          background-clip: content-box;
+          border: 0.25rem solid transparent;
+          border-radius: 50%;
+          font-size: 0;
+          transition: transform 0.1s;
+        }
+
+        .carousel::before,
+        .carousel::after,
+        .carousel__prev,
+        .carousel__next {
+          position: absolute;
+          top: 0;
+          margin-top: 37.5%;
+          width: 4rem;
+          height: 4rem;
+          transform: translateY(-50%);
+          border-radius: 50%;
+          font-size: 0;
+          outline: 0;
+        }
+
+        .carousel::before,
+        .carousel__prev {
+          left: -1rem;
+        }
+
+        .carousel::after,
+        .carousel__next {
+          right: -1rem;
+        }
+
+        .carousel::before,
+        .carousel::after {
+          content: "";
+          z-index: 1;
+          background-color: #333;
+          background-size: 1.5rem 1.5rem;
+          background-repeat: no-repeat;
+          background-position: center center;
+          color: #fff;
+          font-size: 2.5rem;
+          line-height: 4rem;
+          text-align: center;
+          pointer-events: none;
+        }
+
+        .carousel::before {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+        }
+
+        .carousel::after {
+          background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+        }
+      </style>
+
+      <div class="carousel-container">
+      <section class="carousel" aria-label="Gallery">
+        <ol class="carousel__viewport">
+          <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+              <a href="#carousel__slide4" class="carousel__prev"
+                >Go to last slide</a
+              >
+              <a href="#carousel__slide2" class="carousel__next"
+                >Go to next slide</a
+              >
             </div>
+          </li>
+          <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide3" class="carousel__next"
+              >Go to next slide</a
+            >
+          </li>
+          <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide4" class="carousel__next"
+              >Go to next slide</a
+            >
+          </li>
+          <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3" class="carousel__prev"
+              >Go to previous slide</a
+            >
+            <a href="#carousel__slide1" class="carousel__next"
+              >Go to first slide</a
+            >
+          </li>
+        </ol>
+        <aside class="carousel__navigation">
+          <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide1" class="carousel__navigation-button"
+                >Go to slide 1</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide2" class="carousel__navigation-button"
+                >Go to slide 2</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide3" class="carousel__navigation-button"
+                >Go to slide 3</a
+              >
+            </li>
+            <li class="carousel__navigation-item">
+              <a href="#carousel__slide4" class="carousel__navigation-button"
+                >Go to slide 4</a
+              >
+            </li>
+          </ol>
+        </aside>
+      </section>
+    </section>
+    </div>
+    <section class="section container galery-container">
+    </section>
 
-            <figure class="tile image-tile js-modal-trigger" data-target="modal-photo0">
-              <img src="Galerie/fresque-murale.png" class="image-galerie" alt="" />
-            </figure>
-  
-              <div id="modal-photo0" class="modal">
-                <div class="modal-background"></div>
-                <div class="modal-content">
-                  <figure class="image">
-                    <img src="Galerie/fresque-murale.png" class="image-galerie" alt="" />
-                  </figure>
-                </div>
-              </div>
-
-					<figure class="tile image-tile js-modal-trigger" data-target="modal-photo2">
-						<img src="Galerie/TableMosaique1.jpg" class="image-galerie" alt="" />
-					</figure>
-
-          <div id="modal-photo2" class="modal">
-            <div class="modal-background"></div>
-            <div class="modal-content container">
-              <figure class="image">
-                <img src="Galerie/TableMosaiqueZoom1.jpg" class="image-galerie" alt="" />
-              </figure>
-              <figure class="image">
-                <img src="Galerie/TableMosaiqueZoom2.jpg" class="image-galerie" alt="" />
-              </figure>
-            </div>
-          </div>
-
-					<figure class="tile image-tile js-modal-trigger" data-target="modal-photo3">
-						<img src="Galerie/Mosaique5.jpg" class="image-galerie" alt="" />
-					</figure>
-
-          <div id="modal-photo3" class="modal">
-              <div class="modal-background"></div>
-              <div class="modal-content">
-                <figure class="image">
-                  <img src="Galerie/Mosaique5.jpg" class="image-galerie" alt="" />
-                </figure>
-              </div>
-            </div>
-				</div>
-
-				<div class="is-parent">
-
-          <div class="tile image-tile">
-						<figure class="tile image-tile js-modal-trigger" data-target="modal-photo4">
-							<img src="Galerie/Mosaique12.jpg" alt="" class="image-galerie" />
-						</figure>
-            <div id="modal-photo4" class="modal">
-              <div class="modal-background"></div>
-              <div class="modal-content">
-                <figure class="image">
-                  <img src="Galerie/Mosaique12.jpg" class="image-galerie" alt="" />
-                </figure>
-              </div>
-            </div>
-					</div>
-
-					<div class="tile image-tile">
-						<figure class="tile image-tile js-modal-trigger" data-target="modal-photo5">
-							<img src="Galerie/Mosaique11.jpg" alt="" class="image-galerie" />
-						</figure>
-            <div id="modal-photo5" class="modal">
-              <div class="modal-background"></div>
-              <div class="modal-content">
-                <figure class="image">
-                  <img src="Galerie/Mosaique11.jpg" class="image-galerie" alt="" />
-                </figure>
-              </div>
-            </div>
-					</div>
-					<div class="tile image-tile">
-						<figure class="tile image-tile js-modal-trigger" data-target="modal-photo6">
-							<img src="Galerie/Mosaique7.jpg" alt="" class="image-galerie" />
-						</figure>
-            <div id="modal-photo6" class="modal">
-              <div class="modal-background"></div>
-              <div class="modal-content">
-                <figure class="image">
-                  <img src="Galerie/Mosaique7.jpg" class="image-galerie" alt="" />
-                </figure>
-              </div>
-            </div>
-					</div>
-					<div class="tile image-tile">
-						<figure class="tile image-tile js-modal-trigger" data-target="modal-photo7">
-							<img src="Galerie/Mosaique9.jpg" alt="" class="image-galerie" />
-						</figure>
-            <div id="modal-photo7" class="modal">
-              <div class="modal-background"></div>
-              <div class="modal-content">
-                <figure class="image">
-                  <img src="Galerie/Mosaique9.jpg" class="image-galerie" alt="" />
-                </figure>
-              </div>
-            </div>
-					</div>
-				</div>
-			</div> -->
-		</section>
-
-		<section class="mlp-section section" id="section4" style="display: none">
-			<canvas
-				class="Board-Canvas absolute-origin in-background"
-				id="canvas2"
-			></canvas>
-		</section>
+    <section class="mlp-section section" id="section4" style="display: none">
+      <canvas
+        class="Board-Canvas absolute-origin in-background"
+        id="canvas2"
+      ></canvas>
+    </section>
   </body>
 
   <script src="./Canima/Support/Canvarea.js "></script>
@@ -282,58 +443,5 @@
 
   <script src="brushStrokesDefs.js "></script>
   <script src="canvasDisplay.js "></script>
- 
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(
-        document.querySelectorAll(".navbar-burger"),
-        0
-      );
-
-      // Add a click event on each of them
-      $navbarBurgers.forEach((el) => {
-        el.addEventListener("click", () => {
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
-
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle("is-active");
-          $target.classList.toggle("is-active");
-        });
-      });
-    });
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-  <script>
-    // Initialize all div with carousel class
-    const options = {
-      slidesToShow: 1,
-      loop: true,
-    };
-    const carousels = bulmaCarousel.attach(".carousel", options);
-
-    //Loop on each carousel initialized
-    for (var i = 0; i < carousels.length; i++) {
-      //Add Listener event
-      carousels[i].on("before:show", (state) => {
-        console.log(state);
-      });
-    }
-
-    // Access to bulmaCarousel instance of an element
-
-    let element = document.querySelector("#my-element");
-    if (element && element.bulmaCarousel) {
-      //bulmaCarousel instance is available as element.bulmaCarousel
-      element.bulmaCarousel.on("before-show", function (state) {
-        console.log(state);
-      });
-    }
-  </script>
-
-<script src="bulma_modal.js"></script>
 </html>
