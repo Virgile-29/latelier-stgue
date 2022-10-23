@@ -166,7 +166,8 @@
         }
 
         .carousel-container {
-          max-width: 37.5rem;
+          max-width: 1000px;
+          width: auto;
           margin: 0 auto;
           padding: 0 1.25rem;
           font-family: "Lato", sans-serif;
@@ -230,12 +231,20 @@
           counter-increment: item;
         }
 
-        .carousel__slide:nth-child(even) {
-          background-color: #99f;
+        .carousel__slide:nth-child(1) {
+          background: url('./ArtTherap1.jpg');
+          background-size: cover;
+        } 
+        .carousel__slide:nth-child(2) {
+          background: url('./brushStrokes.png');
+          background-size: cover;
         }
+        .carousel__slide:nth-child(3) {
+          background: url('./Cours_adultes.jpg');
+          background-size: cover;
+        } 
 
         .carousel__slide:before {
-          content: counter(item);
           position: absolute;
           top: 50%;
           left: 50%;
@@ -444,4 +453,37 @@
   <script src="brushStrokesDefs.js "></script>
   <script src="canvasDisplay.js "></script>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach((el) => {
+        el.addEventListener("click", () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle("is-active");
+          $target.classList.toggle("is-active");
+        });
+      });
+
+    //   const buttons = [
+    //     ...document.querySelectorAll('.carousel__navigation-button'),
+    //     ...document.querySelectorAll('.carousel__prev'),
+    //     ...document.querySelectorAll('.carousel__next')
+    //  ]
+    //   buttons.forEach(button => {
+    //     button.addEventListener('click', (e) => {
+    //       document.body.scrollTop =document.body.scrollTop  
+    //     })
+    //   })
+    });
+  </script>
 </html>
