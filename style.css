@@ -24,12 +24,18 @@ body {
 strong {
 	font-weight: 700;
 }
+
 .mlp-section {
 	display: flex;
 	position: relative;
 	flex-flow: column nowrap;
 	min-height: var(--sectionHeight);
 	width: 100vw;
+	max-width: 1280px;
+	margin-inline: auto;;
+}
+.mlp-section.full-width{
+	max-width: 100vw;
 }
 nav a {
 	text-decoration: none !important;
@@ -124,7 +130,7 @@ canvas {
 	font-variant-caps: petite-caps;
 	font-weight: bold;
 	font-size: 20px;
-	padding: 24px !important;
+	padding: 18px !important;
 }
 
 .navbar-item .icon {
