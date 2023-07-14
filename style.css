@@ -19,10 +19,7 @@ body {
 	font-size: 1.20em !important;
 	font-family: 'Comfortaa', cursive !important;
 }
-nav {
-	animation: cubic-bezier(0.645, 0.045, 0.355, 1)
-		fadein 2s;
-}
+
 
 strong {
 	font-weight: 700;
