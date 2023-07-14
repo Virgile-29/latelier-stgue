@@ -23,6 +23,10 @@ nav {
 	animation: cubic-bezier(0.645, 0.045, 0.355, 1)
 		fadein 2s;
 }
+
+strong {
+	font-weight: 700;
+}
 .mlp-section {
 	display: flex;
 	position: relative;
@@ -41,7 +45,7 @@ canvas {
 	box-shadow: 3px 6px 6px rgba(59, 58, 57, 0.5);
 }
 
-.image img.side-image {
+ img.side-image {
 	width: 300px;
 	margin: auto;
 }
@@ -87,7 +91,7 @@ canvas {
 	margin-inline-start: 2vw;
 	line-height: 3rem;
 	backdrop-filter: blur(1px);
-	font-weight: 600;
+	font-weight: 400;
 }
 
 .column.flex-column,
@@ -184,6 +188,10 @@ canvas {
 	color: #5c5c5c;
 }
 
+.tile {
+	cursor: pointer;
+}
+
 @media (max-width: 769px) {
 
 	.image-tile {
@@ -208,4 +216,33 @@ canvas {
 		margin: 0;
 		max-width: 100%;
 	}
+}
+
+/* .carousel-commandes {
+	max-height: 50vh;
+	max-width: 50vw;
+} */
+
+/* .image {
+	height: fit-content;
+	width: fit-content;
+} */
+
+@media (max-width: 700px) {
+	.image-carousel {
+		padding-left: 0%;
+	}
+}
+
+.image-carousel {
+	
+}
+
+.carousel-container {
+	width: 50vw;
+	height: 50vh;
+}
+
+.carousel {
+	height:25%;
 }

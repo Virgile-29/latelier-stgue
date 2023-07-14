@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>MLMB Art-Thérapie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+</head>
+
+<body>
+  <section class="section" style="padding-top: 0;">
+    <div class="mt-4 mr-4">
+      <nav class="navbar is-transparent">
+        <div class="navbar-brand">
+          <div class="navbar-burger" data-target="navmenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div id="navmenu" class="navbar-menu">
+          <div class="navbar-start"></div>
+          <div class="navbar-end">
+            <a class="navbar-item mx-3" href="index.html">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+              Accueil
+            </a>
+
+            <a href="./galerie.html" class="navbar-item mx-3">
+              <span class="icon">
+                <i class="fa-solid fa-palette"></i>
+              </span>
+              Galerie
+            </a>
+
+            <a href="./cours-et-stages.html" class="navbar-item mx-3">
+              <span class="icon">
+                <i class="fa-solid fa-person-chalkboard"></i>
+              </span>
+              Les cours et stages de mosaiques</a>
+
+            <a href="./art-therapie.html" class="navbar-item mx-3">
+              <span class="icon">
+                <i class="fa-solid fa-hand-holding-hand"></i>
+              </span>
+              Art thérapie
+            </a>
+
+            <a href="#section4" class="navbar-item mx-3">
+              <span class="icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              &nbsp;Contact&nbsp;
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    </div>
+    <canvas class="Board-Canvas absolute-origin in-background" id="canvas1"></canvas>
+  </section>
+
+  <section class="section mt-5">
+    <div class="container">
+      <div class="block">
+        <h2 class="is-size-3 has-text-justify subtitle">Créations sur commande</h2>
+        <p class="mlp-paragraph">
+          L’atelier vous propose des créations personnelles comme du mobilier, de l’art de la table, des tableaux, des fresques intérieures et extérieures.
+          Toutes vos envies ou projets personnels peuvent être réalisés avec un devis sur mesure. Pour toute information supplémentaire, <a href="index.html#section4">contacter</a>  l’Atelier.
+        </p>
+      </div>
+
+      <!-- Start Carousel -->
+				<div id="carousel-commandes" class="carousel carousel-commandes section">
+					<div class="item-1 card carousel-image">
+						<div class="card-image carousel-image">
+              <figure class="image carousel-image">
+                <img src="Galerie/commande-perso-ecole.jpg" alt="commande atelier de Saint Guénolé Marie Laure Moulart">
+              </figure>
+            </div>
+            <div class="card-footer">
+              <p>Description</p>
+            </div>
+					</div>
+					<div class="item-2 card carousel-image">
+						<div class="card-image ">
+              <figure class="image carousel-image">
+                <img src="Galerie/Commande1.jpg" class="" alt="commande atelier de Saint Guénolé Marie Laure Moulart">
+              </figure>
+            </div>
+            <div class="card-footer">
+              <p>Description</p>
+            </div>
+					</div>
+					<div class="item-3 card carousel-image">
+						<div class="card-image">
+              <figure class="image carousel-image">
+                <img src="Galerie/Commande2.jpg" alt="commande atelier de Saint Guénolé Marie Laure Moulart">
+              </figure>
+            </div>
+            <div class="card-footer">
+              <p>Description</p>
+            </div>
+					</div>
+          <div class="item-4 card carousel-image">
+						<div class="card-image">
+              <figure class="image carousel-image">
+                <img src="Galerie/creation-commande.jpg" alt="commande atelier de Saint Guénolé Marie Laure Moulart">
+              </figure>
+            </div>
+            <div class="card-footer">
+              <p>Description</p>
+            </div>
+					</div>
+          <div class="item-5 card carousel-image">
+						<div class="card-image">
+              <figure class="image carousel-image">
+                <img src="Galerie/creation-commande1.jpg" alt="commande atelier de Saint Guénolé Marie Laure Moulart">
+              </figure>
+            </div>
+            <div class="card-footer">
+              <p>Description</p>
+            </div>
+					</div>
+				</div>
+				<!-- End Carousel -->
+    </div>
+
+  </section>
+
+  <section id="section4" style="display: none;">
+    <canvas
+    class="Board-Canvas absolute-origin in-background"
+    id="canvas2"
+  ></canvas></section>
+</body>
+
+<script src="./Canima/Support/Canvarea.js "></script>
+<script src="./Canima/Geometry/Figure.js "></script>
+<script src="./Canima/Geometry/Line.js "></script>
+<script src="./Canima/Geometry/Curve.js "></script>
+<script src="./Canima/Medium/Filter.js "></script>
+<script src="./Canima/Medium/Brushstroke.js "></script>
+<script src="./Canima/Color/Gradient.js "></script>
+<script src="./Canima/Geometry/Text.js "></script>
+
+<script src="./Canima/Architecture/Canima.js "></script>
+
+<script src="brushStrokesDefs.js "></script>
+<script src="canvasDisplay.js "></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-burger"),
+      0
+    );
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach((el) => {
+      el.addEventListener("click", () => {
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle("is-active");
+        $target.classList.toggle("is-active");
+      });
+    });
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+		<script>
+      const options = {
+        slidesToShow: 2,
+        loop: true,
+
+      }
+		bulmaCarousel.attach('#carousel-commandes', options);
+		</script>
+
+</html>
